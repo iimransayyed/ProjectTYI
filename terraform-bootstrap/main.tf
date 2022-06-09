@@ -1,7 +1,7 @@
 resource "aws_s3_bucket" "terraform_state" {
-    bucket = "${var.name_prefix}-terraform-state"
-    acl = "${var.acl_value}" 
-    tags = var.tags
+  bucket = local.bucket_name
+  acl    = var.acl_value
+  tags   = var.tags
 }
 
 resource "aws_dynamodb_table" "terraform-lock" {
@@ -10,9 +10,9 @@ resource "aws_dynamodb_table" "terraform-lock" {
     type = "S"
   }
 
-  hash_key = "LockID"
-  name = "${var.name_prefix}-terraform-state-lock"
-  read_capacity = 1
+  hash_key       = "LockID"
+  name           = local.table_name
+  read_capacity  = 1
   write_capacity = 1
-  tags = var.tags
+  tags           = var.tags
 }
