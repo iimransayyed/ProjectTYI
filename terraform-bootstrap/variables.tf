@@ -2,13 +2,7 @@ variable "app_id" {
   type        = string
   description = "TYI"
 }
-
-variable "chargeback_id" {
-  type        = string
-  description = "TYI-1"
-}
-
-variable "prouct_name" {
+variable "product_name" {
   type        = string
   description = "TYI-1"
 }

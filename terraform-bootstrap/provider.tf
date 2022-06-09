@@ -7,6 +7,13 @@ terraform {
   }
 }
 
+terraform {
+  backend "s3" {
+    key = "terraform-bootstrap/terraform.tfstate"
+  }
+}
+
+
 # Configure the AWS Provider
 provider "aws" {
   region  = "ap-southeast-1"
