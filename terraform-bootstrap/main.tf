@@ -1,6 +1,7 @@
 resource "aws_s3_bucket" "terraform_state" {
   bucket = local.bucket_name
   acl    = var.acl_value
+  force_destroy = "true"  
   tags   = var.tags
 }
 
