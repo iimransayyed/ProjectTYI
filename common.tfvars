@@ -6,3 +6,6 @@ tags = {
     App_id = "TYI"
     product_name = "TYI-1"
 }
+name_prefix = "215209696359"
+acl_value = "private"
+versioning = "false"

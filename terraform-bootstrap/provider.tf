@@ -7,11 +7,11 @@ terraform {
   }
 }
 
-terraform {
-  backend "s3" {
-    key = "terraform-bootstrap/terraform.tfstate"
-  }
-}
+# terraform {
+#   backend "s3" {
+#     key = "terraform-bootstrap/terraform.tfstate"
+#   }
+# }
 
 
 # Configure the AWS Provider

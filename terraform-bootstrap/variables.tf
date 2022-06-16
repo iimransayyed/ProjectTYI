@@ -14,8 +14,12 @@ variable "tags" {
 }
 variable "name_prefix" {
   type    = string
-  default = "215209696359"
+  default = ""
 }
 variable "acl_value" {
-  default = "private"
+  default = ""
+}
+variable "versioning" {
+    type        = bool
+    description = "(Optional) A state of versioning."
 }
