@@ -8,6 +8,16 @@ resource "aws_s3_bucket" "terraform_state" {
   tags   = var.tags
 }
 
+resource "aws_s3_bucket" "log_bucket" {
+  bucket = local.log_bucket_name
+  acl    = var.acl_value  
+  force_destroy = "true"
+  versioning {
+        enabled = var.versioning
+    }    
+  tags   = var.tags
+}
+
 resource "aws_dynamodb_table" "terraform-lock" {
   attribute {
     name = "LockID"
