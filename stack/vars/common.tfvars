@@ -8,6 +8,3 @@ tags = {
     Product_name = "EasySurvey"
     Backup = "false"
 }
-
-
-

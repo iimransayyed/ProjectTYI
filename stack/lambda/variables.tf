@@ -18,3 +18,31 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "runtime" {
+  type    = string
+  default = ""
+}
+
+variable "timeout" {
+  default = ""
+}
+
+variable "handler_name" {
+  type    = string
+  default = ""
+}
+
+variable "environment" {
+  type    = string
+  default = ""
+}
+variable "sender_email" {
+  type    = string
+  default = ""
+}
+
+variable "receiver_email" {
+  type    = string
+  default = ""
+}
