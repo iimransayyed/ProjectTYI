@@ -1,4 +1,4 @@
-# ProjectTYI
+# ProjectTYI:(Trust Your Instinct)
 Terraform Bootstrap account, Pipeline, Environment, Webhook, 
 1. Creating S3 bucket & DDB Table.
 2. Run "terraform init" into terraform-bootstrap folder.
@@ -11,3 +11,4 @@ Terraform Bootstrap account, Pipeline, Environment, Webhook,
 7. Update the account.tfvars
 8. Run "terraform init" into terraform-bootstrap folder again to use s3 backend.
 	 terraform init --backend-config=../vars/account.tfvars
+## May Lord Buddha Bless, No Bug Forever##	 
