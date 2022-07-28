@@ -6,7 +6,10 @@ tags = {
     App_id = "TYI"
     product_name = "TYI-1"
 }
+#AWS Resource Prefix
 name_prefix = "215209696359"
+
+## TF State S3 Bucket
 acl_value = "private"
 versioning = "false"
 
