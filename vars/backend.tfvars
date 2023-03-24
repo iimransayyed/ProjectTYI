@@ -1,3 +1,3 @@
-bucket = "215209696359-global-terraform-state"
-dynamodb_table = "215209696359-global-terraform-state-lock"
-region = "ap-southeast-1"
+bucket = "514741091671-global-terraform-state"
+dynamodb_table = "514741091671-global-terraform-state-lock"
+region = "us-east-1"
